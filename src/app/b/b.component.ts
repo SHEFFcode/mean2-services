@@ -14,6 +14,9 @@ export class BComponent implements OnInit {
   constructor(private logService: LogService, private dataService: DataService) { }
 
   ngOnInit() {
+    this.dataService.pushedData.subscribe(
+      (data) => this.value = data
+    );
   }
 
   onLog(value: string) {

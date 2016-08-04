@@ -28,4 +28,8 @@ export class AComponent implements OnInit {
     this.items = this.dataService.getData();
   }
 
+  onSend(value: string) {
+    this.dataService.pushDataTo(value);
+  }
+
 }

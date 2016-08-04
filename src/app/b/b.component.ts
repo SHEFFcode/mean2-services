@@ -6,8 +6,7 @@ import {DataService} from "../data.service";
   moduleId: module.id,
   selector: 'app-b',
   templateUrl: 'b.component.html',
-  styleUrls: ['b.component.css'],
-  providers: [LogService]
+  styleUrls: ['b.component.css']
 })
 export class BComponent implements OnInit {
   value = '';
